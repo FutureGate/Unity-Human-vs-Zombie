@@ -1189,6 +1189,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1404,11 +1405,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 979071882138309905}
     m_Modifications:
-    - target: {fileID: 7573107372154840277, guid: e0340c77c6f6e4b4abdcff780b356124,
-        type: 3}
-      propertyPath: m_Name
-      value: Gun
-      objectReference: {fileID: 0}
     - target: {fileID: 7573107372154840276, guid: e0340c77c6f6e4b4abdcff780b356124,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1463,6 +1459,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7573107372154840277, guid: e0340c77c6f6e4b4abdcff780b356124,
+        type: 3}
+      propertyPath: m_Name
+      value: Gun
       objectReference: {fileID: 0}
     - target: {fileID: 7573107372154840279, guid: e0340c77c6f6e4b4abdcff780b356124,
         type: 3}

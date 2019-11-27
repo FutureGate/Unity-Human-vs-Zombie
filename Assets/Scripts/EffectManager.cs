@@ -25,16 +25,15 @@ public class EffectManager : MonoBehaviour
     {
         var targetPrefab = commonHitEffectPrefab;
 
-        if(effectType == EffectType.Flesh) {
+        if (effectType == EffectType.Flesh)
+        {
             targetPrefab = fleshHitEffectPrefab;
         }
 
         var effect = Instantiate(targetPrefab, pos, Quaternion.LookRotation(normal));
 
-        if(parent != null) {
-            effect.transform.SetParent(parent);
-        }
-
+        if (parent != null) effect.transform.SetParent(parent);
+        
         effect.Play();
     }
 }

@@ -6,12 +6,12 @@ public class Crosshair : MonoBehaviour
     public Image aimPointReticle;
     public Image hitPointReticle;
 
-    public float smoothTime = 0.2f;
+    public float smoothTime = 10f;
     
     private Camera screenCamera;
     private RectTransform crossHairRectTransform;
 
-    private Vector2 currentHitPointVelocity;
+    private Vector3 currentHitPointVelocity;
     private Vector2 targetPoint;
 
     private void Awake()
@@ -33,10 +33,9 @@ public class Crosshair : MonoBehaviour
 
     private void Update()
     {
-        if(!hitPointReticle.enabled)
-            return;
+        if (!hitPointReticle.enabled) return;
 
-        crossHairRectTransform.position = 
-            Vector2.SmoothDamp(crossHairRectTransform.position, targetPoint, ref currentHitPointVelocity, smoothTime);
+        crossHairRectTransform.position = Vector3.SmoothDamp(crossHairRectTransform.position, targetPoint,
+            ref currentHitPointVelocity, smoothTime * Time.deltaTime);
     }
 }

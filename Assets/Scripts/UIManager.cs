@@ -42,7 +42,7 @@ public class UIManager : MonoBehaviour
 
     public void UpdateLifeText(int count)
     {
-        lifeText.text = "Life : " + count;
+        lifeText.text = "목숨 : " + count;
     }
 
     public void UpdateCrossHairPosition(Vector3 worldPosition)
